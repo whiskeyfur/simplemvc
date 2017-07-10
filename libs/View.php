@@ -1,4 +1,7 @@
 <?php
+	// This class really should not be touched unless you intend to change the look and feel for the ENTIRE application
+	// This does affect views that might also return a non-html mime type, like an excel document or text file.
+	// Try to implement your changes in a view before going site wide.
 	class View {
 		private $path;
 		
