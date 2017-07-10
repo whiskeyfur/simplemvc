@@ -1,0 +1,10 @@
+RewriteEngine On
+
+Options -Indexes
+
+RewriteRule ^index.php			-						[L] # Assume that we've already been through the rest of the rules.
+RewriteRule ^resources			-						[L] # and our support files go here.
+
+RewriteRule ^$					index.php/home/index	[L]
+RewriteRule ^(.*)$				index.php/$1			[L]
+
